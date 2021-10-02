@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+
+    /* ### Primary */
+
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    
+    /* ### Neutral */
+    
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+    
+    /* ### Gradients */
+    
+    --grad1: linear-gradient(135deg, hsl(0,0%,100%), hsl(0,100%,98%));
+
+    /* - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+    - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Josefin Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-image: linear-gradient(135deg, hsl(0,0%,100%), hsl(0,100%, 98%));
+}
+
+.mainBox {
+    margin-bottom: 5rem;
+}
+
+.title {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.photo {
+    margin-bottom: 3rem;
+}
+
+.bottomPart {
+    text-align: center;
+    color: var(--Desaturated-Red);
+    font-weight: 400;
+}
+
+.botTitle {
+    text-transform: uppercase;
+    font-size: 35px; 
+    font-weight: 300;
+    letter-spacing: 1rem;
+    margin-bottom: 1rem;
+}
+
+.botTitle span {
+    color: var(--Dark-Grayish-Red);
+    font-weight: 600;
+}
+
+.botText {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.emailInput {
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid var(--Desaturated-Red);
+    width: 23em;
+    height: 4em;
+    font-family: "Josefin Sans",sans-serif;
+    color: var(--Desaturated-Red);
+    padding-left: 1.5em;
+}
+
+.emailInput::placeholder {
+    color: var(--Desaturated-Red);
+    opacity: 0.5;
+}
+
+.emailForm {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.sendBtn {
+    padding-right: 1.5rem;
+    left: 75%;
+    position: absolute;
+    width: 4.5rem;
+    height: 4em;
+    border: none;
+    border-radius: 30px;
+    background-image: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    cursor: pointer;
+}
+
+.sendBtn::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid hsl(0,100%,98%);
+    border-right: 2px solid hsl(0,100%,98%);
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.error {
+    display: none;
+}
+
+.error.active{
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: left;
+    color: var(--Soft-Red);
+    padding-left: 4.7em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center; }
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
