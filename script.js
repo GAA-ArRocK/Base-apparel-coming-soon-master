@@ -5,7 +5,7 @@ function mailCheck(inputMail) {
     if (inputMail.match(mailFormat)) {
         errorMessage.classList.remove("active");
         document.checkForm.email.value = ""
-        alert("Email " + inputMail + " has been added to the list. Thank you for participation!");
+        // alert("Email " + inputMail + " has been added to the list. Thank you for participation!");
     }
     else {
         errorMessage.classList.add("active");
